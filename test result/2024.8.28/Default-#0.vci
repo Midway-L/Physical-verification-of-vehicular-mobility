@@ -1,0 +1,88 @@
+file 598653 1724857786                                          
+version 3
+run Default-0-20240828-17:06:58-11049
+attr configname Default
+attr datetime 20240828-17:06:58
+attr datetimef 20240828-170658
+attr experiment Default
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network CarlaExampleScenario
+attr processid 11049
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config image-path ../../../veins/images;../../images
+config *.**.nic.phy80211p.analogueModels "xmldoc(\"config.xml\")"
+config cmdenv-express-mode true
+config cmdenv-autoflush true
+config cmdenv-status-frequency 1s
+config **.cmdenv-log-level debug
+config image-path ../../images
+config network CarlaExampleScenario
+config debug-on-errors true
+config print-undisposed true
+config **.scalar-recording true
+config **.vector-recording true
+config *.playgroundSizeX 2500000m
+config *.playgroundSizeY 2500000m
+config *.playgroundSizeZ 500m
+config *.annotations.draw true
+config *.manager.updateInterval 0.1s
+config *.manager.host "\"localhost\""
+config *.manager.port 1337
+config *.manager.autoShutdown true
+config *.connectionManager.sendDirect true
+config *.connectionManager.maxInterfDist 2600m
+config *.connectionManager.drawMaxIntfDist false
+config *.**.nic.mac1609_4.useServiceChannel false
+config *.**.nic.mac1609_4.txPower 20mW
+config *.**.nic.mac1609_4.bitrate 6Mbps
+config *.**.nic.phy80211p.minPowerLevel -110dBm
+config *.**.nic.phy80211p.useNoiseFloor true
+config *.**.nic.phy80211p.noiseFloor -98dBm
+config *.**.nic.phy80211p.decider "xmldoc(\"config.xml\")"
+config *.**.nic.phy80211p.analogueModels "xmldoc(\"config.xml\")"
+config *.**.nic.phy80211p.usePropagationDelay true
+config *.**.nic.phy80211p.antenna "xmldoc(\"antenna.xml\", \"/root/Antenna[@id='monopole']\")"
+config *.node[*].nic.phy80211p.antennaOffsetY "0 m"
+config *.node[*].nic.phy80211p.antennaOffsetZ "1.895 m"
+config *.node[*].nic.mac1609_4.cmdenv-log-level trace
+config *.node[*].nic.phy80211p.cmdenv-log-level trace
+config *.node[*].applType "\"ExampleCarlaApplication\""
+config *.node[*].appl.headerLength "88 bit"
+config *.node[*].appl.sendBeacons true
+config *.node[*].appl.dataOnSch false
+config *.node[*].appl.beaconInterval 0.1s
+config *.node[*].carlaMobility.x 0
+config *.node[*].carlaMobility.y 0
+config *.node[*].carlaMobility.z 0
+config *.node[*].carlaMobility.setHostSpeed false
+config *.node[*].typename CarlaCar
+
+vector 0 CarlaExampleScenario.node[0].carlaMobility posx ETV
+vector 1 CarlaExampleScenario.node[0].carlaMobility posy ETV
+vector 2 CarlaExampleScenario.node[0].appl messageSendTime ETV
+vector 3 CarlaExampleScenario.node[1].carlaMobility posx ETV
+vector 4 CarlaExampleScenario.node[1].carlaMobility posy ETV
+vector 5 CarlaExampleScenario.node[1].appl messageSendTime ETV
+vector 6 CarlaExampleScenario.node[1].appl messageReceiveTime ETV
+vector 7 CarlaExampleScenario.node[1].appl rssi ETV
+vector 8 CarlaExampleScenario.node[0].appl messageReceiveTime ETV
+vector 9 CarlaExampleScenario.node[0].appl rssi ETV
+0	3029 46665 1 88853 0.1 161.6 1616 1484.7345581055 2398.4437561035 3070487.0907786 5973328654.0265
+1	49694 46643 1 88853 0.1 161.6 1616 1973.9074668884 2436.0038452148 3504496.950972 7643349772.9934
+2	96337 29276 1 88853 0.1 161.6 1616 0.1 161.6 130653.6 14080102.96
+3	125613 46607 1 88753 0.1 161.4 1614 1484.7339477539 2403.6231689453 3065891.4315491 5963261877.6324
+4	172220 46542 1 88753 0.1 161.4 1614 1995.6538538933 2436.000213623 3501492.5274731 7639340673.0275
+5	218762 29236 1 88753 0.1 161.4 1614 0.1 161.4 130330.5 14027906.15
+6	247998 86596 41 105188 0.184540076758 214.284537657453 2153 0.184540076758 214.28453765745 230757.68204477 32945603.203158
+7	334594 88925 41 105188 0.184540076758 214.284537657453 2153 -70.389457301044 -63.64744329464 -144016.83617818 9638366.9662323
+8	423519 86418 56 105203 0.184833153516 214.284830751724 2151 0.184833153516 214.28483075172 230435.22285432 32893543.732229
+9	509937 88715 56 105203 0.184833153516 214.284830751724 2151 -70.389457301044 -63.64744329464 -143882.41197939 9629332.0336222
+

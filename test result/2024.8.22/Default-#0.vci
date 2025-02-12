@@ -1,0 +1,92 @@
+file 8682 1724334021                                            
+version 3
+run Default-0-20240822-15:37:11-39245
+attr configname Default
+attr datetime 20240822-15:37:11
+attr datetimef 20240822-153711
+attr experiment Default
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network CarlaExampleScenario
+attr processid 39245
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config image-path ../../../veins/images
+config *.**.nic.phy80211p.analogueModels "xmldoc(\"config.xml\")"
+config cmdenv-express-mode true
+config cmdenv-autoflush true
+config cmdenv-status-frequency 1s
+config **.cmdenv-log-level debug
+config image-path ../../images
+config network CarlaExampleScenario
+config debug-on-errors true
+config print-undisposed true
+config **.scalar-recording true
+config **.vector-recording true
+config *.playgroundSizeX 2500000m
+config *.playgroundSizeY 2500000m
+config *.playgroundSizeZ 500m
+config *.annotations.draw true
+config *.manager.updateInterval 1s
+config *.manager.host "\"localhost\""
+config *.manager.port 1337
+config *.manager.autoShutdown true
+config *.connectionManager.sendDirect true
+config *.connectionManager.maxInterfDist 2600m
+config *.connectionManager.drawMaxIntfDist false
+config *.**.nic.mac1609_4.useServiceChannel false
+config *.**.nic.mac1609_4.txPower 20mW
+config *.**.nic.mac1609_4.bitrate 6Mbps
+config *.**.nic.phy80211p.minPowerLevel -110dBm
+config *.**.nic.phy80211p.useNoiseFloor true
+config *.**.nic.phy80211p.noiseFloor -98dBm
+config *.**.nic.phy80211p.decider "xmldoc(\"config.xml\")"
+config *.**.nic.phy80211p.analogueModels "xmldoc(\"config.xml\")"
+config *.**.nic.phy80211p.usePropagationDelay true
+config *.**.nic.phy80211p.antenna "xmldoc(\"antenna.xml\", \"/root/Antenna[@id='monopole']\")"
+config *.node[*].nic.phy80211p.antennaOffsetY "0 m"
+config *.node[*].nic.phy80211p.antennaOffsetZ "1.895 m"
+config *.node[*].nic.mac1609_4.cmdenv-log-level trace
+config *.node[*].nic.phy80211p.cmdenv-log-level trace
+config *.node[*].applType "\"ExampleCarlaApplication\""
+config *.node[*].appl.headerLength "88 bit"
+config *.node[*].appl.sendBeacons true
+config *.node[*].appl.dataOnSch false
+config *.node[*].appl.beaconInterval 1s
+config *.node[*].carlaMobility.x 0
+config *.node[*].carlaMobility.y 0
+config *.node[*].carlaMobility.z 0
+config *.node[*].carlaMobility.setHostSpeed false
+config *.node[*].typename CarlaCar
+
+vector 0 CarlaExampleScenario.node[0].carlaMobility posx ETV
+vector 1 CarlaExampleScenario.node[0].carlaMobility posy ETV
+vector 2 CarlaExampleScenario.node[0].carlaMobility speed ETV
+vector 3 CarlaExampleScenario.node[0].appl messageSendTime ETV
+vector 4 CarlaExampleScenario.node[1].carlaMobility posx ETV
+vector 5 CarlaExampleScenario.node[1].carlaMobility posy ETV
+vector 6 CarlaExampleScenario.node[1].carlaMobility speed ETV
+vector 7 CarlaExampleScenario.node[1].appl messageSendTime ETV
+vector 8 CarlaExampleScenario.node[1].appl messageReceiveTime ETV
+vector 9 CarlaExampleScenario.node[1].appl rssi ETV
+vector 10 CarlaExampleScenario.node[0].appl messageReceiveTime ETV
+vector 11 CarlaExampleScenario.node[0].appl rssi ETV
+0	3138 461 1 992 1 19 19 1485.973815918 2380.8729858398 36464.643404007 71678492.088756
+1	3599 461 1 992 1 19 19 1944.1485671997 2435.9339599609 41023.216131687 89107942.035723
+2	4060 197 1 992 1 19 19 0 0 0 0
+3	4257 207 1 992 1 19 19 1 19 190 2470
+4	4464 461 1 992 1 19 19 1485.8472900391 2380.7669372559 36420.529953003 71481631.033893
+5	4925 460 1 992 1 19 19 1958.355014801 2435.829864502 41051.443892479 89217992.534999
+6	5385 197 1 992 1 19 19 0 0 0 0
+7	5582 207 1 992 1 19 19 1 19 190 2470
+8	5789 701 41 1031 1.844377094778 19.844376064993 19 1.844377094778 19.844376064993 206.04315669957 2804.4097051948
+9	6490 728 41 1031 1.844377094778 19.844376064993 19 -71.626222309769 -60.706565741865 -1235.709002173 80494.880758546
+10	7218 717 56 1046 1.847361142167 19.847360122836 19 1.847361142167 19.847360122836 206.09990622979 2805.6404397133
+11	7935 746 56 1046 1.847361142167 19.847360122836 19 -71.626222309769 -60.706565741865 -1235.709002173 80494.880758546
+

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Master_thesis_physical_verification
 
 Master thesis project aims for fusion sensor data and location verification in VANET, based on the tool chain of SUMO, Veins and Carla. They need to be simulated together to untilize their functionalities.
@@ -392,7 +391,3 @@ The above scripts are used for static test, which means we record data then use 
 
 
 
-=======
-# master_thesis_physical_verification
-Master thesis project aims for fusion sensor data and location verification in VANET, based on the tool chain of SUMO, Plexe, Veins and Carla.
->>>>>>> Initial commit

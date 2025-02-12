@@ -1,0 +1,377 @@
+version 3
+run Default-0-20240827-14:57:04-9415
+attr configname Default
+attr datetime 20240827-14:57:04
+attr datetimef 20240827-145704
+attr experiment Default
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network CarlaExampleScenario
+attr processid 9415
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config image-path ../../../veins/images;../../images
+config *.**.nic.phy80211p.analogueModels "xmldoc(\"config.xml\")"
+config cmdenv-express-mode true
+config cmdenv-autoflush true
+config cmdenv-status-frequency 1s
+config **.cmdenv-log-level debug
+config image-path ../../images
+config network CarlaExampleScenario
+config debug-on-errors true
+config print-undisposed true
+config **.scalar-recording true
+config **.vector-recording true
+config *.playgroundSizeX 2500000m
+config *.playgroundSizeY 2500000m
+config *.playgroundSizeZ 500m
+config *.annotations.draw true
+config *.manager.updateInterval 0.2s
+config *.manager.host "\"localhost\""
+config *.manager.port 1337
+config *.manager.autoShutdown true
+config *.connectionManager.sendDirect true
+config *.connectionManager.maxInterfDist 2600m
+config *.connectionManager.drawMaxIntfDist false
+config *.**.nic.mac1609_4.useServiceChannel false
+config *.**.nic.mac1609_4.txPower 20mW
+config *.**.nic.mac1609_4.bitrate 6Mbps
+config *.**.nic.phy80211p.minPowerLevel -110dBm
+config *.**.nic.phy80211p.useNoiseFloor true
+config *.**.nic.phy80211p.noiseFloor -98dBm
+config *.**.nic.phy80211p.decider "xmldoc(\"config.xml\")"
+config *.**.nic.phy80211p.analogueModels "xmldoc(\"config.xml\")"
+config *.**.nic.phy80211p.usePropagationDelay true
+config *.**.nic.phy80211p.antenna "xmldoc(\"antenna.xml\", \"/root/Antenna[@id='monopole']\")"
+config *.node[*].nic.phy80211p.antennaOffsetY "0 m"
+config *.node[*].nic.phy80211p.antennaOffsetZ "1.895 m"
+config *.node[*].nic.mac1609_4.cmdenv-log-level trace
+config *.node[*].nic.phy80211p.cmdenv-log-level trace
+config *.node[*].applType "\"ExampleCarlaApplication\""
+config *.node[*].appl.headerLength "88 bit"
+config *.node[*].appl.sendBeacons true
+config *.node[*].appl.dataOnSch false
+config *.node[*].appl.beaconInterval 0.2s
+config *.node[*].carlaMobility.x 0
+config *.node[*].carlaMobility.y 0
+config *.node[*].carlaMobility.z 0
+config *.node[*].carlaMobility.setHostSpeed false
+config *.node[*].typename CarlaCar
+
+par CarlaExampleScenario.obstacles typename "\"org.car2x.veins.modules.obstacle.ObstacleControl\""
+par CarlaExampleScenario.obstacles obstacles "<obstacles/> at content:1"
+par CarlaExampleScenario.obstacles gridCellSize 250
+par CarlaExampleScenario.annotations typename "\"org.car2x.veins.modules.world.annotations.AnnotationManager\""
+par CarlaExampleScenario.annotations draw true
+par CarlaExampleScenario.annotations annotations "<annotations/> at content:1"
+par CarlaExampleScenario.connectionManager typename "\"org.car2x.veins.base.connectionManager.ConnectionManager\""
+par CarlaExampleScenario.connectionManager sendDirect true
+par CarlaExampleScenario.connectionManager maxInterfDist 2600m
+attr unit m
+par CarlaExampleScenario.connectionManager drawMaxIntfDist false
+par CarlaExampleScenario.manager typename "\"veins_carla.mobility.CarlaScenarioManager\""
+par CarlaExampleScenario.manager connectAt 0s
+attr unit s
+par CarlaExampleScenario.manager updateInterval 0.2s
+attr unit s
+par CarlaExampleScenario.manager moduleType "\"veins_carla.nodes.CarlaCar\""
+par CarlaExampleScenario.manager moduleName "\"node\""
+par CarlaExampleScenario.manager moduleDisplayString "\"i=veins/node/car;is=vs'\""
+par CarlaExampleScenario.manager host "\"localhost\""
+par CarlaExampleScenario.manager port 1337
+par CarlaExampleScenario.world typename "\"org.car2x.veins.base.modules.BaseWorldUtility\""
+par CarlaExampleScenario.world playgroundSizeX 2.5e+06m
+attr unit m
+par CarlaExampleScenario.world playgroundSizeY 2.5e+06m
+attr unit m
+par CarlaExampleScenario.world playgroundSizeZ 500m
+attr unit m
+par CarlaExampleScenario.world useTorus false
+par CarlaExampleScenario.world use2D false
+par CarlaExampleScenario.node[0].appl typename "\"veins_carla.app.ExampleCarlaApplication\""
+par CarlaExampleScenario.node[0].appl headerLength 88bit
+attr unit bit
+par CarlaExampleScenario.node[0].appl sendBeacons true
+par CarlaExampleScenario.node[0].appl beaconLengthBits 256bit
+attr unit bit
+par CarlaExampleScenario.node[0].appl beaconUserPriority 7
+par CarlaExampleScenario.node[0].appl beaconInterval 0.2s
+attr unit s
+par CarlaExampleScenario.node[0].appl dataLengthBits 1024bit
+attr unit bit
+par CarlaExampleScenario.node[0].appl dataOnSch false
+par CarlaExampleScenario.node[0].appl dataUserPriority 7
+par CarlaExampleScenario.node[0].appl avoidBeaconSynchronization true
+par CarlaExampleScenario.node[0].appl sendWSA false
+par CarlaExampleScenario.node[0].appl wsaLengthBits 250bit
+attr unit bit
+par CarlaExampleScenario.node[0].appl wsaInterval 1s
+attr unit s
+par CarlaExampleScenario.node[0].appl appName "\"My first CARLA App!\""
+scalar CarlaExampleScenario.node[0].appl generatedWSMs 0
+scalar CarlaExampleScenario.node[0].appl receivedWSMs 0
+scalar CarlaExampleScenario.node[0].appl generatedBSMs 2446
+scalar CarlaExampleScenario.node[0].appl receivedBSMs 1535
+scalar CarlaExampleScenario.node[0].appl generatedWSAs 0
+scalar CarlaExampleScenario.node[0].appl receivedWSAs 0
+par CarlaExampleScenario.node[0].nic.phy80211p typename "\"org.car2x.veins.modules.phy.PhyLayer80211p\""
+par CarlaExampleScenario.node[0].nic.phy80211p recordStats false
+par CarlaExampleScenario.node[0].nic.phy80211p usePropagationDelay true
+par CarlaExampleScenario.node[0].nic.phy80211p noiseFloor -98dBm
+attr unit dBm
+par CarlaExampleScenario.node[0].nic.phy80211p useNoiseFloor true
+par CarlaExampleScenario.node[0].nic.phy80211p antenna "<Antenna type=\"SampledAntenna1D\" id=\"monopole\">...</Antenna> at /home/midway/master/omnetpp-6.0.3/samples/veins_carla/examples/veins_carla//antenna.xml:35"
+par CarlaExampleScenario.node[0].nic.phy80211p antennaOffsetX 0m
+attr unit m
+par CarlaExampleScenario.node[0].nic.phy80211p antennaOffsetY 0m
+attr unit m
+par CarlaExampleScenario.node[0].nic.phy80211p antennaOffsetZ 1.895m
+attr unit m
+par CarlaExampleScenario.node[0].nic.phy80211p antennaOffsetYaw 0rad
+attr unit rad
+par CarlaExampleScenario.node[0].nic.phy80211p analogueModels "<root>...</root> at /home/midway/master/omnetpp-6.0.3/samples/veins_carla/examples/veins_carla//config.xml:34"
+par CarlaExampleScenario.node[0].nic.phy80211p decider "<root>...</root> at /home/midway/master/omnetpp-6.0.3/samples/veins_carla/examples/veins_carla//config.xml:34"
+par CarlaExampleScenario.node[0].nic.phy80211p minPowerLevel -110dBm
+attr unit dBm
+par CarlaExampleScenario.node[0].nic.phy80211p timeRXToTX 0s
+attr unit s
+par CarlaExampleScenario.node[0].nic.phy80211p timeRXToSleep 0s
+attr unit s
+par CarlaExampleScenario.node[0].nic.phy80211p timeTXToRX 0s
+attr unit s
+par CarlaExampleScenario.node[0].nic.phy80211p timeTXToSleep 0s
+attr unit s
+par CarlaExampleScenario.node[0].nic.phy80211p timeSleepToRX 0s
+attr unit s
+par CarlaExampleScenario.node[0].nic.phy80211p timeSleepToTX 0s
+attr unit s
+par CarlaExampleScenario.node[0].nic.phy80211p initialRadioState 0
+par CarlaExampleScenario.node[0].nic.phy80211p radioMinAtt 1
+par CarlaExampleScenario.node[0].nic.phy80211p radioMaxAtt 0
+par CarlaExampleScenario.node[0].nic.phy80211p nbRadioChannels 1
+par CarlaExampleScenario.node[0].nic.phy80211p initialRadioChannel 0
+par CarlaExampleScenario.node[0].nic.phy80211p ccaThreshold -65dBm
+attr unit dBm
+par CarlaExampleScenario.node[0].nic.phy80211p collectCollisionStatistics false
+par CarlaExampleScenario.node[0].nic.phy80211p allowTxDuringRx false
+scalar CarlaExampleScenario.node[0].nic.phy80211p busyTime 0.00052272429600524
+par CarlaExampleScenario.node[0].nic.mac1609_4 typename "\"org.car2x.veins.modules.mac.ieee80211p.Mac1609_4\""
+par CarlaExampleScenario.node[0].nic.mac1609_4 notAffectedByHostState false
+par CarlaExampleScenario.node[0].nic.mac1609_4 headerLength 0bit
+attr unit bit
+par CarlaExampleScenario.node[0].nic.mac1609_4 address "\"auto\""
+par CarlaExampleScenario.node[0].nic.mac1609_4 useServiceChannel false
+par CarlaExampleScenario.node[0].nic.mac1609_4 serviceChannel 1
+par CarlaExampleScenario.node[0].nic.mac1609_4 bitrate 6000000bps
+attr unit bps
+par CarlaExampleScenario.node[0].nic.mac1609_4 syncOffset 0.0003s
+attr unit s
+par CarlaExampleScenario.node[0].nic.mac1609_4 txPower 20mW
+attr unit mW
+par CarlaExampleScenario.node[0].nic.mac1609_4 queueSize 0
+par CarlaExampleScenario.node[0].nic.mac1609_4 dot11RTSThreshold 12000bit
+attr unit bit
+par CarlaExampleScenario.node[0].nic.mac1609_4 dot11ShortRetryLimit 7
+par CarlaExampleScenario.node[0].nic.mac1609_4 dot11LongRetryLimit 4
+par CarlaExampleScenario.node[0].nic.mac1609_4 ackLength 112bit
+attr unit bit
+par CarlaExampleScenario.node[0].nic.mac1609_4 useAcks false
+par CarlaExampleScenario.node[0].nic.mac1609_4 frameErrorRate 0
+par CarlaExampleScenario.node[0].nic.mac1609_4 ackErrorRate 0
+scalar CarlaExampleScenario.node[0].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar CarlaExampleScenario.node[0].nic.mac1609_4 ReceivedBroadcasts 1535
+scalar CarlaExampleScenario.node[0].nic.mac1609_4 SentPackets 2446
+scalar CarlaExampleScenario.node[0].nic.mac1609_4 SentAcknowledgements 0
+scalar CarlaExampleScenario.node[0].nic.mac1609_4 RetriesExceeded 0
+scalar CarlaExampleScenario.node[0].nic.mac1609_4 SNIRLostPackets 0
+scalar CarlaExampleScenario.node[0].nic.mac1609_4 RXTXLostPackets 909
+scalar CarlaExampleScenario.node[0].nic.mac1609_4 TotalLostPackets 909
+scalar CarlaExampleScenario.node[0].nic.mac1609_4 DroppedPacketsInMac 0
+scalar CarlaExampleScenario.node[0].nic.mac1609_4 TooLittleTime 0
+scalar CarlaExampleScenario.node[0].nic.mac1609_4 TimesIntoBackoff 2446
+scalar CarlaExampleScenario.node[0].nic.mac1609_4 SlotsBackoff 3626
+scalar CarlaExampleScenario.node[0].nic.mac1609_4 NumInternalContention 0
+scalar CarlaExampleScenario.node[0].nic.mac1609_4 totalBusyTime 0.41647026753
+scalar CarlaExampleScenario.node[0].nic.mac1609_4 retriesExceeded:count 0
+attr recordingmode count
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar CarlaExampleScenario.node[0].nic.mac1609_4 sentAcks:count 0
+attr recordingmode count
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar CarlaExampleScenario.node[0].nic.mac1609_4 sentPackets:count 2446
+attr recordingmode count
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar CarlaExampleScenario.node[0].nic.mac1609_4 collisions:count 0
+attr recordingmode count
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar CarlaExampleScenario.node[0].nic.mac1609_4 channelBusy:timeavg 0.0013636878439096
+attr recordingmode timeavg
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+par CarlaExampleScenario.node[0].nic typename "\"org.car2x.veins.modules.nic.Nic80211p\""
+par CarlaExampleScenario.node[0].nic connectionManagerName "\"connectionManager\""
+par CarlaExampleScenario.node[0].carlaMobility typename "\"veins_carla.mobility.CarlaMobility\""
+par CarlaExampleScenario.node[0].carlaMobility notAffectedByHostState true
+par CarlaExampleScenario.node[0].carlaMobility x 0
+par CarlaExampleScenario.node[0].carlaMobility y 0
+par CarlaExampleScenario.node[0].carlaMobility z 0
+par CarlaExampleScenario.node[0].carlaMobility xOrientation 1
+par CarlaExampleScenario.node[0].carlaMobility yOrientation 0
+par CarlaExampleScenario.node[0].carlaMobility zOrientation 0
+par CarlaExampleScenario.node[0].carlaMobility hostPositionOffset 0m
+attr unit m
+par CarlaExampleScenario.node[0].carlaMobility setHostSpeed false
+par CarlaExampleScenario.node[0] typename "\"veins_carla.nodes.CarlaCar\""
+par CarlaExampleScenario.node[0] applType "\"ExampleCarlaApplication\""
+par CarlaExampleScenario.node[0] nicType "\"Nic80211p\""
+par CarlaExampleScenario.node[0] mobilityType "\"CarlaMobility\""
+par CarlaExampleScenario.node[1].appl typename "\"veins_carla.app.ExampleCarlaApplication\""
+par CarlaExampleScenario.node[1].appl headerLength 88bit
+attr unit bit
+par CarlaExampleScenario.node[1].appl sendBeacons true
+par CarlaExampleScenario.node[1].appl beaconLengthBits 256bit
+attr unit bit
+par CarlaExampleScenario.node[1].appl beaconUserPriority 7
+par CarlaExampleScenario.node[1].appl beaconInterval 0.2s
+attr unit s
+par CarlaExampleScenario.node[1].appl dataLengthBits 1024bit
+attr unit bit
+par CarlaExampleScenario.node[1].appl dataOnSch false
+par CarlaExampleScenario.node[1].appl dataUserPriority 7
+par CarlaExampleScenario.node[1].appl avoidBeaconSynchronization true
+par CarlaExampleScenario.node[1].appl sendWSA false
+par CarlaExampleScenario.node[1].appl wsaLengthBits 250bit
+attr unit bit
+par CarlaExampleScenario.node[1].appl wsaInterval 1s
+attr unit s
+par CarlaExampleScenario.node[1].appl appName "\"My first CARLA App!\""
+scalar CarlaExampleScenario.node[1].appl generatedWSMs 0
+scalar CarlaExampleScenario.node[1].appl receivedWSMs 0
+scalar CarlaExampleScenario.node[1].appl generatedBSMs 2444
+scalar CarlaExampleScenario.node[1].appl receivedBSMs 1537
+scalar CarlaExampleScenario.node[1].appl generatedWSAs 0
+scalar CarlaExampleScenario.node[1].appl receivedWSAs 0
+par CarlaExampleScenario.node[1].nic.phy80211p typename "\"org.car2x.veins.modules.phy.PhyLayer80211p\""
+par CarlaExampleScenario.node[1].nic.phy80211p recordStats false
+par CarlaExampleScenario.node[1].nic.phy80211p usePropagationDelay true
+par CarlaExampleScenario.node[1].nic.phy80211p noiseFloor -98dBm
+attr unit dBm
+par CarlaExampleScenario.node[1].nic.phy80211p useNoiseFloor true
+par CarlaExampleScenario.node[1].nic.phy80211p antenna "<Antenna type=\"SampledAntenna1D\" id=\"monopole\">...</Antenna> at /home/midway/master/omnetpp-6.0.3/samples/veins_carla/examples/veins_carla//antenna.xml:35"
+par CarlaExampleScenario.node[1].nic.phy80211p antennaOffsetX 0m
+attr unit m
+par CarlaExampleScenario.node[1].nic.phy80211p antennaOffsetY 0m
+attr unit m
+par CarlaExampleScenario.node[1].nic.phy80211p antennaOffsetZ 1.895m
+attr unit m
+par CarlaExampleScenario.node[1].nic.phy80211p antennaOffsetYaw 0rad
+attr unit rad
+par CarlaExampleScenario.node[1].nic.phy80211p analogueModels "<root>...</root> at /home/midway/master/omnetpp-6.0.3/samples/veins_carla/examples/veins_carla//config.xml:34"
+par CarlaExampleScenario.node[1].nic.phy80211p decider "<root>...</root> at /home/midway/master/omnetpp-6.0.3/samples/veins_carla/examples/veins_carla//config.xml:34"
+par CarlaExampleScenario.node[1].nic.phy80211p minPowerLevel -110dBm
+attr unit dBm
+par CarlaExampleScenario.node[1].nic.phy80211p timeRXToTX 0s
+attr unit s
+par CarlaExampleScenario.node[1].nic.phy80211p timeRXToSleep 0s
+attr unit s
+par CarlaExampleScenario.node[1].nic.phy80211p timeTXToRX 0s
+attr unit s
+par CarlaExampleScenario.node[1].nic.phy80211p timeTXToSleep 0s
+attr unit s
+par CarlaExampleScenario.node[1].nic.phy80211p timeSleepToRX 0s
+attr unit s
+par CarlaExampleScenario.node[1].nic.phy80211p timeSleepToTX 0s
+attr unit s
+par CarlaExampleScenario.node[1].nic.phy80211p initialRadioState 0
+par CarlaExampleScenario.node[1].nic.phy80211p radioMinAtt 1
+par CarlaExampleScenario.node[1].nic.phy80211p radioMaxAtt 0
+par CarlaExampleScenario.node[1].nic.phy80211p nbRadioChannels 1
+par CarlaExampleScenario.node[1].nic.phy80211p initialRadioChannel 0
+par CarlaExampleScenario.node[1].nic.phy80211p ccaThreshold -65dBm
+attr unit dBm
+par CarlaExampleScenario.node[1].nic.phy80211p collectCollisionStatistics false
+par CarlaExampleScenario.node[1].nic.phy80211p allowTxDuringRx false
+scalar CarlaExampleScenario.node[1].nic.phy80211p busyTime 0.00052340537000655
+par CarlaExampleScenario.node[1].nic.mac1609_4 typename "\"org.car2x.veins.modules.mac.ieee80211p.Mac1609_4\""
+par CarlaExampleScenario.node[1].nic.mac1609_4 notAffectedByHostState false
+par CarlaExampleScenario.node[1].nic.mac1609_4 headerLength 0bit
+attr unit bit
+par CarlaExampleScenario.node[1].nic.mac1609_4 address "\"auto\""
+par CarlaExampleScenario.node[1].nic.mac1609_4 useServiceChannel false
+par CarlaExampleScenario.node[1].nic.mac1609_4 serviceChannel 1
+par CarlaExampleScenario.node[1].nic.mac1609_4 bitrate 6000000bps
+attr unit bps
+par CarlaExampleScenario.node[1].nic.mac1609_4 syncOffset 0.0003s
+attr unit s
+par CarlaExampleScenario.node[1].nic.mac1609_4 txPower 20mW
+attr unit mW
+par CarlaExampleScenario.node[1].nic.mac1609_4 queueSize 0
+par CarlaExampleScenario.node[1].nic.mac1609_4 dot11RTSThreshold 12000bit
+attr unit bit
+par CarlaExampleScenario.node[1].nic.mac1609_4 dot11ShortRetryLimit 7
+par CarlaExampleScenario.node[1].nic.mac1609_4 dot11LongRetryLimit 4
+par CarlaExampleScenario.node[1].nic.mac1609_4 ackLength 112bit
+attr unit bit
+par CarlaExampleScenario.node[1].nic.mac1609_4 useAcks false
+par CarlaExampleScenario.node[1].nic.mac1609_4 frameErrorRate 0
+par CarlaExampleScenario.node[1].nic.mac1609_4 ackErrorRate 0
+scalar CarlaExampleScenario.node[1].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar CarlaExampleScenario.node[1].nic.mac1609_4 ReceivedBroadcasts 1537
+scalar CarlaExampleScenario.node[1].nic.mac1609_4 SentPackets 2444
+scalar CarlaExampleScenario.node[1].nic.mac1609_4 SentAcknowledgements 0
+scalar CarlaExampleScenario.node[1].nic.mac1609_4 RetriesExceeded 0
+scalar CarlaExampleScenario.node[1].nic.mac1609_4 SNIRLostPackets 0
+scalar CarlaExampleScenario.node[1].nic.mac1609_4 RXTXLostPackets 909
+scalar CarlaExampleScenario.node[1].nic.mac1609_4 TotalLostPackets 909
+scalar CarlaExampleScenario.node[1].nic.mac1609_4 DroppedPacketsInMac 0
+scalar CarlaExampleScenario.node[1].nic.mac1609_4 TooLittleTime 0
+scalar CarlaExampleScenario.node[1].nic.mac1609_4 TimesIntoBackoff 2444
+scalar CarlaExampleScenario.node[1].nic.mac1609_4 SlotsBackoff 3611
+scalar CarlaExampleScenario.node[1].nic.mac1609_4 NumInternalContention 0
+scalar CarlaExampleScenario.node[1].nic.mac1609_4 totalBusyTime 0.416585255831
+scalar CarlaExampleScenario.node[1].nic.mac1609_4 retriesExceeded:count 0
+attr recordingmode count
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar CarlaExampleScenario.node[1].nic.mac1609_4 sentAcks:count 0
+attr recordingmode count
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar CarlaExampleScenario.node[1].nic.mac1609_4 sentPackets:count 2444
+attr recordingmode count
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar CarlaExampleScenario.node[1].nic.mac1609_4 collisions:count 0
+attr recordingmode count
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar CarlaExampleScenario.node[1].nic.mac1609_4 channelBusy:timeavg 0.0013640643609398
+attr recordingmode timeavg
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+par CarlaExampleScenario.node[1].nic typename "\"org.car2x.veins.modules.nic.Nic80211p\""
+par CarlaExampleScenario.node[1].nic connectionManagerName "\"connectionManager\""
+par CarlaExampleScenario.node[1].carlaMobility typename "\"veins_carla.mobility.CarlaMobility\""
+par CarlaExampleScenario.node[1].carlaMobility notAffectedByHostState true
+par CarlaExampleScenario.node[1].carlaMobility x 0
+par CarlaExampleScenario.node[1].carlaMobility y 0
+par CarlaExampleScenario.node[1].carlaMobility z 0
+par CarlaExampleScenario.node[1].carlaMobility xOrientation 1
+par CarlaExampleScenario.node[1].carlaMobility yOrientation 0
+par CarlaExampleScenario.node[1].carlaMobility zOrientation 0
+par CarlaExampleScenario.node[1].carlaMobility hostPositionOffset 0m
+attr unit m
+par CarlaExampleScenario.node[1].carlaMobility setHostSpeed false
+par CarlaExampleScenario.node[1] typename "\"veins_carla.nodes.CarlaCar\""
+par CarlaExampleScenario.node[1] applType "\"ExampleCarlaApplication\""
+par CarlaExampleScenario.node[1] nicType "\"Nic80211p\""
+par CarlaExampleScenario.node[1] mobilityType "\"CarlaMobility\""
+par CarlaExampleScenario typename "\"CarlaExampleScenario\""
+par CarlaExampleScenario playgroundSizeX 2.5e+06m
+attr unit m
+par CarlaExampleScenario playgroundSizeY 2.5e+06m
+attr unit m
+par CarlaExampleScenario playgroundSizeZ 500m
+attr unit m
+par CarlaExampleScenario useVehicleObstacleShadowing false
+

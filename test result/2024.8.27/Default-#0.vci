@@ -1,0 +1,96 @@
+file 419762 1724763613                                          
+version 3
+run Default-0-20240827-14:57:04-9415
+attr configname Default
+attr datetime 20240827-14:57:04
+attr datetimef 20240827-145704
+attr experiment Default
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network CarlaExampleScenario
+attr processid 9415
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config image-path ../../../veins/images;../../images
+config *.**.nic.phy80211p.analogueModels "xmldoc(\"config.xml\")"
+config cmdenv-express-mode true
+config cmdenv-autoflush true
+config cmdenv-status-frequency 1s
+config **.cmdenv-log-level debug
+config image-path ../../images
+config network CarlaExampleScenario
+config debug-on-errors true
+config print-undisposed true
+config **.scalar-recording true
+config **.vector-recording true
+config *.playgroundSizeX 2500000m
+config *.playgroundSizeY 2500000m
+config *.playgroundSizeZ 500m
+config *.annotations.draw true
+config *.manager.updateInterval 0.2s
+config *.manager.host "\"localhost\""
+config *.manager.port 1337
+config *.manager.autoShutdown true
+config *.connectionManager.sendDirect true
+config *.connectionManager.maxInterfDist 2600m
+config *.connectionManager.drawMaxIntfDist false
+config *.**.nic.mac1609_4.useServiceChannel false
+config *.**.nic.mac1609_4.txPower 20mW
+config *.**.nic.mac1609_4.bitrate 6Mbps
+config *.**.nic.phy80211p.minPowerLevel -110dBm
+config *.**.nic.phy80211p.useNoiseFloor true
+config *.**.nic.phy80211p.noiseFloor -98dBm
+config *.**.nic.phy80211p.decider "xmldoc(\"config.xml\")"
+config *.**.nic.phy80211p.analogueModels "xmldoc(\"config.xml\")"
+config *.**.nic.phy80211p.usePropagationDelay true
+config *.**.nic.phy80211p.antenna "xmldoc(\"antenna.xml\", \"/root/Antenna[@id='monopole']\")"
+config *.node[*].nic.phy80211p.antennaOffsetY "0 m"
+config *.node[*].nic.phy80211p.antennaOffsetZ "1.895 m"
+config *.node[*].nic.mac1609_4.cmdenv-log-level trace
+config *.node[*].nic.phy80211p.cmdenv-log-level trace
+config *.node[*].applType "\"ExampleCarlaApplication\""
+config *.node[*].appl.headerLength "88 bit"
+config *.node[*].appl.sendBeacons true
+config *.node[*].appl.dataOnSch false
+config *.node[*].appl.beaconInterval 0.2s
+config *.node[*].carlaMobility.x 0
+config *.node[*].carlaMobility.y 0
+config *.node[*].carlaMobility.z 0
+config *.node[*].carlaMobility.setHostSpeed false
+config *.node[*].typename CarlaCar
+
+vector 0 CarlaExampleScenario.node[0].carlaMobility posx ETV
+vector 1 CarlaExampleScenario.node[0].carlaMobility posy ETV
+vector 2 CarlaExampleScenario.node[0].carlaMobility speed ETV
+vector 3 CarlaExampleScenario.node[0].appl messageSendTime ETV
+vector 4 CarlaExampleScenario.node[1].carlaMobility posx ETV
+vector 5 CarlaExampleScenario.node[1].carlaMobility posy ETV
+vector 6 CarlaExampleScenario.node[1].carlaMobility speed ETV
+vector 7 CarlaExampleScenario.node[1].appl messageSendTime ETV
+vector 8 CarlaExampleScenario.node[1].appl messageReceiveTime ETV
+vector 9 CarlaExampleScenario.node[1].appl rssi ETV
+vector 10 CarlaExampleScenario.node[0].appl messageReceiveTime ETV
+vector 11 CarlaExampleScenario.node[0].appl rssi ETV
+vector 12 CarlaExampleScenario.node[1].appl messageDelay ETV
+vector 13 CarlaExampleScenario.node[0].appl messageDelay ETV
+0	3275 26342 1 50514 0.2 183.8 919 1484.7350463867 2400.3649902344 1734569.8695606 3350138002.7638
+1	29617 26336 1 50514 0.2 183.8 919 2005.4850010872 2436.0025024414 1998359.1216693 4369899257.6139
+2	55953 13586 1 50514 0.2 183.8 919 0 0 0 0
+3	69539 16348 1 50514 0.2 183.8 919 0.2 183.8 84548 10365584.8
+4	85887 26284 1 50414 0.2 183.4 917 1484.7339477539 2403.6499023438 1730324.1001294 3341260774.2489
+5	112171 26275 1 50414 0.2 183.4 917 2005.4843435287 2435.9998474121 1994383.9336314 4361984763.6116
+6	138446 13554 1 50414 0.2 183.4 917 0 0 0 0
+7	152000 16308 1 50414 0.2 183.4 917 0.2 183.4 84180.6 10298093.4
+8	168308 61064 41 69391 0.368962149162 305.56896600424 1537 0.368962149162 305.56896600424 234608.81075277 47737762.065802
+9	229372 62817 41 69391 0.368962149162 305.56896600424 1537 -65.139347460673 -62.37592999428 -97971.047773128 6245471.4565602
+10	292189 62559 56 69406 0.369567223743 305.56955806948 1535 0.369567223743 305.56955806948 234242.32188345 47670549.465596
+11	354748 64293 56 69406 0.369567223743 305.56955806948 1535 -65.139347460673 -62.37592999428 -97843.143289311 6237291.6780699
+12	419041 398 2822 50528 10.400105065967 183.8001056724 10 0.000105065967 0.0001056724 0.001051941427 1.1065851331294e-07
+13	419439 322 2835 36798 10.400268131558 133.800268168794 8 0.000268131558 0.000268176223 0.002145247141 5.7526066386022e-07
+

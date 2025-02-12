@@ -1,0 +1,88 @@
+file 559002 1739107609                                          
+version 3
+run Default-0-20250209-14:23:44-10512
+attr configname Default
+attr datetime 20250209-14:23:44
+attr datetimef 20250209-142344
+attr experiment Default
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network CarlaExampleScenario
+attr processid 10512
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config image-path ../../../veins/images;../../images
+config *.**.nic.phy80211p.analogueModels "xmldoc(\"config.xml\")"
+config cmdenv-express-mode true
+config cmdenv-autoflush true
+config cmdenv-status-frequency 1s
+config **.cmdenv-log-level debug
+config image-path ../../images
+config network CarlaExampleScenario
+config debug-on-errors true
+config print-undisposed true
+config **.scalar-recording true
+config **.vector-recording true
+config *.playgroundSizeX 2500000m
+config *.playgroundSizeY 2500000m
+config *.playgroundSizeZ 500m
+config *.annotations.draw true
+config *.manager.updateInterval 0.1s
+config *.manager.host "\"localhost\""
+config *.manager.port 1337
+config *.manager.autoShutdown true
+config *.connectionManager.sendDirect true
+config *.connectionManager.maxInterfDist 2600m
+config *.connectionManager.drawMaxIntfDist false
+config *.**.nic.mac1609_4.useServiceChannel false
+config *.**.nic.mac1609_4.txPower 20mW
+config *.**.nic.mac1609_4.bitrate 6Mbps
+config *.**.nic.phy80211p.minPowerLevel -110dBm
+config *.**.nic.phy80211p.useNoiseFloor true
+config *.**.nic.phy80211p.noiseFloor -98dBm
+config *.**.nic.phy80211p.decider "xmldoc(\"config.xml\")"
+config *.**.nic.phy80211p.analogueModels "xmldoc(\"config.xml\")"
+config *.**.nic.phy80211p.usePropagationDelay true
+config *.**.nic.phy80211p.antenna "xmldoc(\"antenna.xml\", \"/root/Antenna[@id='monopole']\")"
+config *.node[*].nic.phy80211p.antennaOffsetY "0 m"
+config *.node[*].nic.phy80211p.antennaOffsetZ "1.895 m"
+config *.node[*].nic.mac1609_4.cmdenv-log-level trace
+config *.node[*].nic.phy80211p.cmdenv-log-level trace
+config *.node[*].applType "\"ExampleCarlaApplication\""
+config *.node[*].appl.headerLength "88 bit"
+config *.node[*].appl.sendBeacons true
+config *.node[*].appl.dataOnSch false
+config *.node[*].appl.beaconInterval 0.1s
+config *.node[*].carlaMobility.x 0
+config *.node[*].carlaMobility.y 0
+config *.node[*].carlaMobility.z 0
+config *.node[*].carlaMobility.setHostSpeed false
+config *.node[*].typename CarlaCar
+
+vector 0 CarlaExampleScenario.node[0].carlaMobility posx ETV
+vector 1 CarlaExampleScenario.node[0].carlaMobility posy ETV
+vector 2 CarlaExampleScenario.node[0].appl messageSendTime ETV
+vector 3 CarlaExampleScenario.node[1].carlaMobility posx ETV
+vector 4 CarlaExampleScenario.node[1].carlaMobility posy ETV
+vector 5 CarlaExampleScenario.node[1].appl messageSendTime ETV
+vector 6 CarlaExampleScenario.node[1].appl messageReceiveTime ETV
+vector 7 CarlaExampleScenario.node[1].appl rssi ETV
+vector 8 CarlaExampleScenario.node[0].appl messageReceiveTime ETV
+vector 9 CarlaExampleScenario.node[0].appl rssi ETV
+0	3029 51046 1 97058 0.1 176.5 1765 1484.7330322266 2392.9206237793 3326484.8982622 6413640766.7582
+1	54075 51050 1 97058 0.1 176.5 1765 1994.5205125809 2436.0033874512 3837383.3963512 8390509604.8829
+2	105125 32196 1 97058 0.1 176.5 1765 0.1 176.5 155849.5 18343486.15
+3	137321 51109 1 97058 0.1 176.5 1765 1484.734375 2398.5867004395 3327547.6173903 6418076343.3713
+4	188430 51086 1 97058 0.1 176.5 1765 2005.4837799072 2436.0040893555 3838324.1035571 8394365326.0408
+5	239516 32196 1 97058 0.1 176.5 1765 0.1 176.5 155849.5 18343486.15
+6	271712 70862 41 97042 0.184540094799 176.484540967029 1773 0.184540094799 176.48454096703 156613.8262237 18437858.732665
+7	342574 72743 41 97042 0.184540094799 176.484540967029 1773 -67.948215118321 -59.789601129365 -110842.23579152 6932400.5353218
+8	415317 70910 56 97057 0.184833189598 176.484834026769 1773 0.184833189598 176.48483402677 156614.35436885 18437952.045087
+9	486227 72774 56 97057 0.184833189598 176.484834026769 1773 -67.948215118321 -59.789601129365 -110842.23579152 6932400.5353218
+

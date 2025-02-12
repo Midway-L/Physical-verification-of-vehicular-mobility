@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <route id="platoon_route" edges="-37.0.00 -38.0.00 -39.0.00 -40.0.00 -41.0.00 -22.0.00"/>
+    <route id="test_route" edges="-37.0.00 -38.0.00 -39.0.00 33.0.00 44.0.00 39.0.00 38.0.00"/>
+
+     <!--<flow id="platoon" route="platoon_route" type="vehicle.tesla.model3" begin="0" period="0.5" departLane="1" number="4" departSpeed="20"/> --> 
+    <vehicle id="0" type="vehicle.tesla.model3" depart="0.0" departLane="1" departSpeed="0" route="platoon_route"/>
+    <vehicle id="1" type="vehicle.tesla.model3" depart="0.1" departLane="1" departSpeed="20" route="platoon_route"/>
+
+</routes>

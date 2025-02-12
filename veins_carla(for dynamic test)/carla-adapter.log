@@ -1,0 +1,225 @@
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+ERROR:grpc._server:Exception calling application: 'NoneType' object has no attribute 'get_location'
+Traceback (most recent call last):
+  File "/home/midway/.local/lib/python3.8/site-packages/grpc/_server.py", line 610, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "./carla_adapter.py", line 121, in GetManagedActorById
+    aLocation = actor.get_location()
+AttributeError: 'NoneType' object has no attribute 'get_location'
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+ERROR:grpc._server:Exception calling application: 'NoneType' object has no attribute 'get_location'
+Traceback (most recent call last):
+  File "/home/midway/.local/lib/python3.8/site-packages/grpc/_server.py", line 610, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "./carla_adapter.py", line 121, in GetManagedActorById
+    aLocation = actor.get_location()
+AttributeError: 'NoneType' object has no attribute 'get_location'
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+ERROR:grpc._server:Exception calling application: 'NoneType' object has no attribute 'get_location'
+Traceback (most recent call last):
+  File "/home/midway/.local/lib/python3.8/site-packages/grpc/_server.py", line 610, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "./carla_adapter.py", line 121, in GetManagedActorById
+    aLocation = actor.get_location()
+AttributeError: 'NoneType' object has no attribute 'get_location'
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+ERROR:grpc._server:Exception calling application: 'NoneType' object has no attribute 'get_location'
+Traceback (most recent call last):
+  File "/home/midway/.local/lib/python3.8/site-packages/grpc/_server.py", line 610, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "./carla_adapter.py", line 121, in GetManagedActorById
+    aLocation = actor.get_location()
+AttributeError: 'NoneType' object has no attribute 'get_location'
+WARNING:root:Superfluous command line arguments: ""
+ERROR:grpc._server:Exception calling application: 'NoneType' object has no attribute 'get_location'
+Traceback (most recent call last):
+  File "/home/midway/.local/lib/python3.8/site-packages/grpc/_server.py", line 610, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "./carla_adapter.py", line 121, in GetManagedActorById
+    aLocation = actor.get_location()
+AttributeError: 'NoneType' object has no attribute 'get_location'
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+ERROR:grpc._server:Exception calling application: 'NoneType' object has no attribute 'get_location'
+Traceback (most recent call last):
+  File "/home/midway/.local/lib/python3.8/site-packages/grpc/_server.py", line 610, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "./carla_adapter.py", line 121, in GetManagedActorById
+    aLocation = actor.get_location()
+AttributeError: 'NoneType' object has no attribute 'get_location'
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+ERROR:grpc._server:Exception calling application: 'NoneType' object has no attribute 'get_location'
+Traceback (most recent call last):
+  File "/home/midway/.local/lib/python3.8/site-packages/grpc/_server.py", line 610, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "./carla_adapter.py", line 121, in GetManagedActorById
+    aLocation = actor.get_location()
+AttributeError: 'NoneType' object has no attribute 'get_location'
+WARNING:root:Superfluous command line arguments: ""
+ERROR:grpc._server:Exception calling application: 'NoneType' object has no attribute 'get_location'
+Traceback (most recent call last):
+  File "/home/midway/.local/lib/python3.8/site-packages/grpc/_server.py", line 610, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "./carla_adapter.py", line 121, in GetManagedActorById
+    aLocation = actor.get_location()
+AttributeError: 'NoneType' object has no attribute 'get_location'
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+ERROR:grpc._server:Exception calling application: 'NoneType' object has no attribute 'get_location'
+Traceback (most recent call last):
+  File "/home/midway/.local/lib/python3.8/site-packages/grpc/_server.py", line 610, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "./carla_adapter.py", line 121, in GetManagedActorById
+    aLocation = actor.get_location()
+AttributeError: 'NoneType' object has no attribute 'get_location'
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+ERROR:grpc._server:Exception calling application: 'NoneType' object has no attribute 'get_location'
+Traceback (most recent call last):
+  File "/home/midway/.local/lib/python3.8/site-packages/grpc/_server.py", line 610, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "./carla_adapter.py", line 121, in GetManagedActorById
+    aLocation = actor.get_location()
+AttributeError: 'NoneType' object has no attribute 'get_location'
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+ERROR:grpc._server:Exception calling application: 'NoneType' object has no attribute 'get_location'
+Traceback (most recent call last):
+  File "/home/midway/.local/lib/python3.8/site-packages/grpc/_server.py", line 610, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "./carla_adapter.py", line 121, in GetManagedActorById
+    aLocation = actor.get_location()
+AttributeError: 'NoneType' object has no attribute 'get_location'
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+ERROR:grpc._server:Exception calling application: 'NoneType' object has no attribute 'get_location'
+Traceback (most recent call last):
+  File "/home/midway/.local/lib/python3.8/site-packages/grpc/_server.py", line 610, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "./carla_adapter.py", line 121, in GetManagedActorById
+    aLocation = actor.get_location()
+AttributeError: 'NoneType' object has no attribute 'get_location'
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+ERROR:grpc._server:Exception calling application: 'NoneType' object has no attribute 'get_location'
+Traceback (most recent call last):
+  File "/home/midway/.local/lib/python3.8/site-packages/grpc/_server.py", line 610, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "./carla_adapter.py", line 121, in GetManagedActorById
+    aLocation = actor.get_location()
+AttributeError: 'NoneType' object has no attribute 'get_location'
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+ERROR:grpc._server:Exception calling application: 'NoneType' object has no attribute 'get_location'
+Traceback (most recent call last):
+  File "/home/midway/.local/lib/python3.8/site-packages/grpc/_server.py", line 610, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "./carla_adapter.py", line 121, in GetManagedActorById
+    aLocation = actor.get_location()
+AttributeError: 'NoneType' object has no attribute 'get_location'
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
+ERROR:grpc._server:Exception calling application: 'NoneType' object has no attribute 'get_location'
+Traceback (most recent call last):
+  File "/home/midway/.local/lib/python3.8/site-packages/grpc/_server.py", line 610, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "./carla_adapter.py", line 121, in GetManagedActorById
+    aLocation = actor.get_location()
+AttributeError: 'NoneType' object has no attribute 'get_location'
+WARNING:root:Superfluous command line arguments: ""
+WARNING:root:Superfluous command line arguments: ""
