@@ -1,0 +1,84 @@
+file 411286 1739105231                                          
+version 3
+run Default-0-20250209-13:43:55-8426
+attr configname Default
+attr datetime 20250209-13:43:55
+attr datetimef 20250209-134355
+attr experiment Default
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network CarlaExampleScenario
+attr processid 8426
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config image-path ../../../veins/images;../../images
+config *.**.nic.phy80211p.analogueModels "xmldoc(\"config.xml\")"
+config cmdenv-express-mode true
+config cmdenv-autoflush true
+config cmdenv-status-frequency 1s
+config **.cmdenv-log-level debug
+config image-path ../../images
+config network CarlaExampleScenario
+config debug-on-errors true
+config print-undisposed true
+config **.scalar-recording true
+config **.vector-recording true
+config *.playgroundSizeX 2500000m
+config *.playgroundSizeY 2500000m
+config *.playgroundSizeZ 500m
+config *.annotations.draw true
+config *.manager.updateInterval 0.1s
+config *.manager.host "\"localhost\""
+config *.manager.port 1337
+config *.manager.autoShutdown true
+config *.connectionManager.sendDirect true
+config *.connectionManager.maxInterfDist 2600m
+config *.connectionManager.drawMaxIntfDist false
+config *.**.nic.mac1609_4.useServiceChannel false
+config *.**.nic.mac1609_4.txPower 20mW
+config *.**.nic.mac1609_4.bitrate 6Mbps
+config *.**.nic.phy80211p.minPowerLevel -110dBm
+config *.**.nic.phy80211p.useNoiseFloor true
+config *.**.nic.phy80211p.noiseFloor -98dBm
+config *.**.nic.phy80211p.decider "xmldoc(\"config.xml\")"
+config *.**.nic.phy80211p.analogueModels "xmldoc(\"config.xml\")"
+config *.**.nic.phy80211p.usePropagationDelay true
+config *.**.nic.phy80211p.antenna "xmldoc(\"antenna.xml\", \"/root/Antenna[@id='monopole']\")"
+config *.node[*].nic.phy80211p.antennaOffsetY "0 m"
+config *.node[*].nic.phy80211p.antennaOffsetZ "1.895 m"
+config *.node[*].nic.mac1609_4.cmdenv-log-level trace
+config *.node[*].nic.phy80211p.cmdenv-log-level trace
+config *.node[*].applType "\"ExampleCarlaApplication\""
+config *.node[*].appl.headerLength "88 bit"
+config *.node[*].appl.sendBeacons true
+config *.node[*].appl.dataOnSch false
+config *.node[*].appl.beaconInterval 0.1s
+config *.node[*].carlaMobility.x 0
+config *.node[*].carlaMobility.y 0
+config *.node[*].carlaMobility.z 0
+config *.node[*].carlaMobility.setHostSpeed false
+config *.node[*].typename CarlaCar
+
+vector 0 CarlaExampleScenario.node[0].carlaMobility posx ETV
+vector 1 CarlaExampleScenario.node[0].carlaMobility posy ETV
+vector 2 CarlaExampleScenario.node[0].appl messageSendTime ETV
+vector 3 CarlaExampleScenario.node[1].carlaMobility posx ETV
+vector 4 CarlaExampleScenario.node[1].carlaMobility posy ETV
+vector 5 CarlaExampleScenario.node[1].appl messageSendTime ETV
+vector 6 CarlaExampleScenario.node[1].appl messageReceiveTime ETV
+vector 7 CarlaExampleScenario.node[1].appl rssi ETV
+0	2909 50498 1 96088 0.1 174.7 1747 1484.7326660156 2393.820892334 3284546.3233865 6315787217.9166
+1	53407 50535 1 96088 0.1 174.7 1747 2005.4837470055 2436.0028381348 3801585.760622 8319331327.89
+2	103942 31844 1 96088 0.1 174.7 1747 0.1 174.7 152687.8 17788128.7
+3	135786 50533 1 96088 0.1 174.7 1747 1484.7327880859 2399.1410522461 3286229.0394965 6323022623.0599
+4	186319 50539 1 96088 0.1 174.7 1747 2005.4837474823 2436.0021362305 3802299.21667 8322271309.5013
+5	236858 31844 1 96088 0.1 174.7 1747 0.1 174.7 152687.8 17788128.7
+6	268702 70364 41 96072 0.184540089106 174.684539829498 1760 0.184540089106 174.6845398295 153819.00507112 17909189.964745
+7	339066 72219 41 96072 0.184540089106 174.684539829498 1760 -65.73023715516 -59.425267476903 -109906.15461691 6866209.4678262
+

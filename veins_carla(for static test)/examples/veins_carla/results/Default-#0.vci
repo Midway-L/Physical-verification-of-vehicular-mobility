@@ -1,0 +1,88 @@
+file 586574 1725373488                                          
+version 3
+run Default-0-20240903-16:21:43-18922
+attr configname Default
+attr datetime 20240903-16:21:43
+attr datetimef 20240903-162143
+attr experiment Default
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network CarlaExampleScenario
+attr processid 18922
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config image-path ../../../veins/images;../../images
+config *.**.nic.phy80211p.analogueModels "xmldoc(\"config.xml\")"
+config cmdenv-express-mode true
+config cmdenv-autoflush true
+config cmdenv-status-frequency 1s
+config **.cmdenv-log-level debug
+config image-path ../../images
+config network CarlaExampleScenario
+config debug-on-errors true
+config print-undisposed true
+config **.scalar-recording true
+config **.vector-recording true
+config *.playgroundSizeX 2500000m
+config *.playgroundSizeY 2500000m
+config *.playgroundSizeZ 500m
+config *.annotations.draw true
+config *.manager.updateInterval 0.1s
+config *.manager.host "\"localhost\""
+config *.manager.port 1337
+config *.manager.autoShutdown true
+config *.connectionManager.sendDirect true
+config *.connectionManager.maxInterfDist 2600m
+config *.connectionManager.drawMaxIntfDist false
+config *.**.nic.mac1609_4.useServiceChannel false
+config *.**.nic.mac1609_4.txPower 20mW
+config *.**.nic.mac1609_4.bitrate 6Mbps
+config *.**.nic.phy80211p.minPowerLevel -110dBm
+config *.**.nic.phy80211p.useNoiseFloor true
+config *.**.nic.phy80211p.noiseFloor -98dBm
+config *.**.nic.phy80211p.decider "xmldoc(\"config.xml\")"
+config *.**.nic.phy80211p.analogueModels "xmldoc(\"config.xml\")"
+config *.**.nic.phy80211p.usePropagationDelay true
+config *.**.nic.phy80211p.antenna "xmldoc(\"antenna.xml\", \"/root/Antenna[@id='monopole']\")"
+config *.node[*].nic.phy80211p.antennaOffsetY "0 m"
+config *.node[*].nic.phy80211p.antennaOffsetZ "1.895 m"
+config *.node[*].nic.mac1609_4.cmdenv-log-level trace
+config *.node[*].nic.phy80211p.cmdenv-log-level trace
+config *.node[*].applType "\"ExampleCarlaApplication\""
+config *.node[*].appl.headerLength "88 bit"
+config *.node[*].appl.sendBeacons true
+config *.node[*].appl.dataOnSch false
+config *.node[*].appl.beaconInterval 0.1s
+config *.node[*].carlaMobility.x 0
+config *.node[*].carlaMobility.y 0
+config *.node[*].carlaMobility.z 0
+config *.node[*].carlaMobility.setHostSpeed false
+config *.node[*].typename CarlaCar
+
+vector 0 CarlaExampleScenario.node[0].carlaMobility posx ETV
+vector 1 CarlaExampleScenario.node[0].carlaMobility posy ETV
+vector 2 CarlaExampleScenario.node[0].appl messageSendTime ETV
+vector 3 CarlaExampleScenario.node[1].carlaMobility posx ETV
+vector 4 CarlaExampleScenario.node[1].carlaMobility posy ETV
+vector 5 CarlaExampleScenario.node[1].appl messageSendTime ETV
+vector 6 CarlaExampleScenario.node[1].appl messageReceiveTime ETV
+vector 7 CarlaExampleScenario.node[1].appl rssi ETV
+vector 8 CarlaExampleScenario.node[0].appl messageReceiveTime ETV
+vector 9 CarlaExampleScenario.node[0].appl rssi ETV
+0	3029 50642 1 96183 0.1 175 1750 1484.7327270508 2401.447052002 3277978.6681111 6274529377.5895
+1	53671 50632 1 96183 0.1 175 1750 2005.4837961197 2436.003112793 3815215.9773645 8366601449.5696
+2	104303 31900 1 96183 0.1 175 1750 0.1 175 153212.5 17879898.75
+3	136203 50513 1 95993 0.1 174.6 1746 1484.7344970703 2403.4219360352 3269301.3264698 6255585394.3105
+4	186716 50504 1 95993 0.1 174.6 1746 2005.4840707779 2436.0040588379 3807354.3853092 8351078256.3263
+5	237220 31824 1 95993 0.1 174.6 1746 0.1 174.6 152513.1 17757608.61
+6	269044 78441 41 102319 0.184540078428 194.784538621507 1955 0.184540078428 194.78453862151 190959.99662141 24830355.646085
+7	347485 80493 41 102319 0.184540078428 194.784538621507 1955 -61.548662971836 -58.278866285533 -116124.93551649 6898919.9896378
+8	427978 78271 56 102334 0.184833117642 194.784831661135 1951 0.184833117642 194.78483166114 190261.17814583 24708178.832287
+9	506249 80324 56 102334 0.184833117642 194.784831661135 1951 -61.548662971836 -58.278866285533 -115886.47308271 6884703.9065565
+
